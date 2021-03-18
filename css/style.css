@@ -16,7 +16,7 @@ html, body {
 	text-align: center;
 }
 
-.container {
+.checkerboard {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -27,89 +27,38 @@ html, body {
 	padding: 20px;
 }
 
-.sub-container {
+.sub-checkerboard {
+	position: relative;
 	width: 808px;
 	height: 808px;
 	border: 4px solid #000;
 	background-color: #fff;
-
+}
+.checkerrow {
+	font-size: 0;
 }
 
-.container-item {
+.checkercell {
+	display: block;
+	position: relative;
+	float: left;
 	width: 100px;
 	height: 100px;
-	float: left;
-}
-
-.container-item:nth-child(1),
-.container-item:nth-child(3),
-.container-item:nth-child(5),
-.container-item:nth-child(7),
-.container-item:nth-child(10),
-.container-item:nth-child(12),
-.container-item:nth-child(14),
-.container-item:nth-child(16),
-.container-item:nth-child(17),
-.container-item:nth-child(19),
-.container-item:nth-child(21),
-.container-item:nth-child(23),
-.container-item:nth-child(26),
-.container-item:nth-child(28),
-.container-item:nth-child(30),
-.container-item:nth-child(32),
-.container-item:nth-child(33),
-.container-item:nth-child(35),
-.container-item:nth-child(37),
-.container-item:nth-child(39),
-.container-item:nth-child(42),
-.container-item:nth-child(44),
-.container-item:nth-child(46),
-.container-item:nth-child(48),
-.container-item:nth-child(49),
-.container-item:nth-child(51),
-.container-item:nth-child(53),
-.container-item:nth-child(55),
-.container-item:nth-child(58),
-.container-item:nth-child(60),
-.container-item:nth-child(62),
-.container-item:nth-child(64)  {
+	margin-right: 100px;
 	background-color: #000;
+	text-align: center;
+	line-height: 100px;
 }
 
-.container-item:nth-child(1),
-.container-item:nth-child(3),
-.container-item:nth-child(5),
-.container-item:nth-child(7),
-.container-item:nth-child(10),
-.container-item:nth-child(12),
-.container-item:nth-child(14),
-.container-item:nth-child(16),
-.container-item:nth-child(17),
-.container-item:nth-child(19),
-.container-item:nth-child(21),
-.container-item:nth-child(23) {
-	background-image: url(../img/checkers_PNG17.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	width: 100px;
+.checkercell:last-child {
+	margin-right: 0;
 }
 
-.container-item:nth-child(42),
-.container-item:nth-child(44),
-.container-item:nth-child(46),
-.container-item:nth-child(48),
-.container-item:nth-child(49),
-.container-item:nth-child(51),
-.container-item:nth-child(53),
-.container-item:nth-child(55),
-.container-item:nth-child(58),
-.container-item:nth-child(60),
-.container-item:nth-child(62),
-.container-item:nth-child(64) {
-	background-image: url(../img/checkers_black.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	width: 100px;
+.checkerrow:nth-child(even) {
+	float: right;
+}
+
+.checkers {
+	width: 70%;
+	vertical-align: middle;
 }
